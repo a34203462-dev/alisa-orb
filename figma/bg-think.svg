@@ -1,0 +1,32 @@
+<svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="orbT">
+      <circle cx="140" cy="140" r="140"/>
+    </clipPath>
+    <radialGradient id="fillT" cx="140" cy="140" r="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0.69231" stop-color="#0B0415"/>
+      <stop offset="0.73077" stop-color="#170832"/>
+      <stop offset="0.76923" stop-color="#220C50"/>
+      <stop offset="0.80769" stop-color="#2D0F6D"/>
+      <stop offset="0.84615" stop-color="#39138A"/>
+      <stop offset="0.92308" stop-color="#4F1BC5"/>
+      <stop offset="1" stop-color="#6622FF"/>
+    </radialGradient>
+    <linearGradient id="rimT" x1="140" y1="4" x2="140" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9B43FF"/>
+      <stop offset="1" stop-color="#460EFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softT" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#orbT)">
+    <rect width="280" height="280" fill="url(#fillT)"/>
+    <path
+      fill-rule="evenodd"
+      fill="url(#rimT)"
+      filter="url(#softT)"
+      d="M0 140a140 140 0 1 1 280 0a140 140 0 1 1-280 0ZM28 165a118 118 0 1 0 224 0a118 118 0 1 0-224 0Z"
+    />
+  </g>
+</svg>

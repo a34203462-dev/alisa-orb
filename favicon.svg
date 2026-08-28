@@ -1,0 +1,18 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon/AI/Alice">
+<g clip-path="url(#clip0_0_4)">
+<path id="Vector" d="M0 0H58V58H0V0Z" fill="url(#paint0_linear_0_4)"/>
+<path id="Vector_2" d="M15.7208 38.3596C17.8027 40.4313 23.3483 41.6754 29 41.6971C34.6516 41.6754 40.1973 40.4313 42.2792 38.3596C47.4517 33.2127 34.8784 13.4936 29.0064 13.4651C23.1216 13.4936 10.5483 33.2127 15.7208 38.3596Z" fill="white"/>
+<path id="Vector_3" d="M15.7208 38.3596C17.8027 40.4313 23.3483 41.6754 29 41.6971C34.6516 41.6754 40.1973 40.4313 42.2792 38.3596C47.4517 33.2127 34.8784 13.4936 29.0064 13.4651C23.1216 13.4936 10.5483 33.2127 15.7208 38.3596Z" fill="white"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_4" x1="0" y1="58" x2="58" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C926FF"/>
+<stop offset="1" stop-color="#4A26FF"/>
+</linearGradient>
+<clipPath id="clip0_0_4">
+<rect width="58" height="58" rx="29" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,41 @@
+<svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="orbL">
+      <circle cx="140" cy="140" r="140"/>
+    </clipPath>
+    <linearGradient id="rimL" x1="140" y1="4" x2="140" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9B43FF"/>
+      <stop offset="0.4" stop-color="#6A1CFF"/>
+      <stop offset="1" stop-color="#460EFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tailL" x1="264" y1="188" x2="152" y2="267" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8D3AFF"/>
+      <stop offset="0.115" stop-color="#5E00ED"/>
+      <stop offset="1" stop-color="#460EFF"/>
+    </linearGradient>
+    <filter id="softL" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+    <filter id="sideL" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur stdDeviation="35.75"/>
+    </filter>
+    <filter id="tailBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14.3"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#orbL)">
+    <rect width="280" height="280" fill="#0B0415"/>
+    <path
+      fill-rule="evenodd"
+      fill="url(#rimL)"
+      filter="url(#softL)"
+      d="M0 140a140 140 0 1 1 280 0a140 140 0 1 1-280 0ZM22 168a118 118 0 1 0 236 0a118 118 0 1 0-236 0Z"
+    />
+    <circle cx="6.5" cy="101.5" r="22.5" fill="#9B43FF" filter="url(#sideL)"/>
+    <path
+      filter="url(#tailBlur)"
+      fill="url(#tailL)"
+      d="M204.147 227.194C175.454 247.36 142.284 253.085 147.683 260.766C153.082 268.448 184.367 260.041 213.06 239.876C241.752 219.711 263.035 187.506 257.636 179.824C252.237 172.143 232.84 207.029 204.147 227.194Z"
+    />
+  </g>
+</svg>

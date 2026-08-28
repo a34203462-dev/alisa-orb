@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="209.418" height="209.418" viewBox="0 0 209.418 209.418" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<g id="Glow" filter="url(#filter0_f_0_4)">
+<circle cx="104.709" cy="104.709" r="40" transform="rotate(90 104.709 104.709)" fill="#F0E8FF"/>
+</g>
+<circle id="Element" cx="105.064" cy="104.709" r="30" transform="rotate(90 105.064 104.709)" fill="#F0E8FF"/>
+<path id="Vector" d="M91.4063 113.864C93.4882 115.936 99.0338 117.18 104.685 117.202C110.337 117.18 115.883 115.936 117.965 113.864C123.137 108.717 110.564 88.9982 104.692 88.9697C98.8071 88.9982 86.2338 108.717 91.4063 113.864Z" fill="#090012"/>
+</g>
+<defs>
+<filter id="filter0_f_0_4" x="-1.90735e-06" y="-1.90735e-06" width="209.418" height="209.418" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="32.3545" result="effect1_foregroundBlur_0_4"/>
+</filter>
+</defs>
+</svg>
