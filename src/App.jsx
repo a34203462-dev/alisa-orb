@@ -309,15 +309,29 @@ export default function App() {
   return (
     <div className="page">
       <div className="mobile-stub">
-        <p className="mobile-stub-copy">
-          Пожалуйста, откройте прототип
-          <br />с компьютера/ноута
-        </p>
-        <div className="mobile-stub-scene" aria-hidden="true">
-          <div className="stub-orbit stub-orbit-white">
-            <div className="stub-ball">
-              <img className="stub-shell" src={asset('figma/ball-white.jpg')} alt="" />
-              <div className="stub-face">
+        <div className="mobile-stub-board">
+          <div className="stub-text">
+            <p>
+              Пожалуйста, откройте прототип
+              <br />
+              с компьютера/ноута
+            </p>
+          </div>
+          <div className="stub-balls">
+            <div className="stub-white-slot">
+              <div className="stub-white-spin">
+                <div className="stub-shell-clip stub-shell-white">
+                  <img src={asset('figma/stub-ball-white.png')} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="stub-shell-clip stub-shell-pink">
+              <img src={asset('figma/stub-ball-pink.png')} alt="" />
+            </div>
+          </div>
+          <div className="stub-face stub-face-white">
+            <div className="stub-face-spin">
+              <div className="stub-face-inner">
                 <img className="stub-face-bg" src={asset('figma/stub-face.svg')} alt="" />
                 <div className="stub-eyes">
                   <img src={asset('figma/stub-eye-l.svg')} alt="" />
@@ -326,15 +340,12 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div className="stub-orbit stub-orbit-pink">
-            <div className="stub-ball">
-              <img className="stub-shell" src={asset('figma/ball-pink.jpg')} alt="" />
-              <div className="stub-face">
-                <img className="stub-face-bg" src={asset('figma/stub-face-2.svg')} alt="" />
-                <div className="stub-eyes">
-                  <img src={asset('figma/stub-eye-l.svg')} alt="" />
-                  <img src={asset('figma/stub-eye-r.svg')} alt="" />
-                </div>
+          <div className="stub-face stub-face-pink">
+            <div className="stub-face-inner">
+              <img className="stub-face-bg" src={asset('figma/stub-face-2.svg')} alt="" />
+              <div className="stub-eyes">
+                <img src={asset('figma/stub-eye-l.svg')} alt="" />
+                <img src={asset('figma/stub-eye-r.svg')} alt="" />
               </div>
             </div>
           </div>
