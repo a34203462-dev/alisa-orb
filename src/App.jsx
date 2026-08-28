@@ -309,11 +309,36 @@ export default function App() {
   return (
     <div className="page">
       <div className="mobile-stub">
-        <span className="mobile-stub-icon">
-          <img src={asset('figma/alice.svg')} alt="" width={120} height={120} />
-        </span>
-        <p className="mobile-stub-title">Откройте на компьютере</p>
-        <p className="mobile-stub-text">Этот прототип Алисы ORB рассчитан на большой экран</p>
+        <p className="mobile-stub-copy">
+          Пожалуйста, откройте прототип
+          <br />с компьютера/ноута
+        </p>
+        <div className="mobile-stub-scene" aria-hidden="true">
+          <div className="stub-orbit stub-orbit-white">
+            <div className="stub-ball">
+              <img className="stub-shell" src={asset('figma/ball-white.jpg')} alt="" />
+              <div className="stub-face">
+                <img className="stub-face-bg" src={asset('figma/stub-face.svg')} alt="" />
+                <div className="stub-eyes">
+                  <img src={asset('figma/stub-eye-l.svg')} alt="" />
+                  <img src={asset('figma/stub-eye-r.svg')} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="stub-orbit stub-orbit-pink">
+            <div className="stub-ball">
+              <img className="stub-shell" src={asset('figma/ball-pink.jpg')} alt="" />
+              <div className="stub-face">
+                <img className="stub-face-bg" src={asset('figma/stub-face-2.svg')} alt="" />
+                <div className="stub-eyes">
+                  <img src={asset('figma/stub-eye-l.svg')} alt="" />
+                  <img src={asset('figma/stub-eye-r.svg')} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <header className="topbar">
         <a className="brand" href="#device">
