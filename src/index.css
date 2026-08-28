@@ -1,0 +1,45 @@
+:root {
+  font-family: "YS Text", Manrope, system-ui, sans-serif;
+  color: #0b0415;
+  background: #e8e8ee;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+@property --gx {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 42%;
+}
+
+@property --gy {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 22%;
+}
+
+@property --glow {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.35;
+}

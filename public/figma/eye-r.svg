@@ -1,0 +1,61 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Eye" clip-path="url(#clip0_0_14)">
+<g id="Segment" filter="url(#filter0_d_0_14)">
+<path d="M2.35281e-08 15.9996C2.35281e-08 22.0748 0.117658 26.9996 2.21053 26.9996C4.3034 26.9996 6 22.0748 6 15.9996C6 9.9245 4.3034 4.99963 2.21053 4.99963C0.117658 4.99963 2.35281e-08 9.9245 2.35281e-08 15.9996Z" fill="#F0E8FF"/>
+</g>
+<g id="Segment_2" filter="url(#filter1_d_0_14)">
+<path d="M28 15.9996C28 22.0748 27.8823 26.9996 25.7895 26.9996C23.6966 26.9996 22 22.0748 22 15.9996C22 9.9245 23.6966 4.99963 25.7895 4.99963C27.8823 4.99963 28 9.9245 28 15.9996Z" fill="#F0E8FF"/>
+</g>
+<g id="Segment_3" filter="url(#filter2_d_0_14)">
+<path d="M14 32C7.92487 32 3 31.8823 3 29.7895C3 27.6966 7.92487 26 14 26C20.0751 26 25 27.6966 25 29.7895C25 31.8823 20.0751 32 14 32Z" fill="#F0E8FF"/>
+</g>
+<g id="Segment_4" filter="url(#filter3_d_0_14)">
+<path d="M14 5.04353e-07C7.92487 7.69906e-07 3 0.117659 3 2.21053C3 4.3034 7.92487 6 14 6C20.0751 6 25 4.3034 25 2.21053C25 0.117658 20.0751 2.38801e-07 14 5.04353e-07Z" fill="#F0E8FF"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_14" x="-4" y="-1.00037" width="14" height="30" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.459669 0 0 0 0 0.0464742 0 0 0 0 1 0 0 0 0.18 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_14"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_14" result="shape"/>
+</filter>
+<filter id="filter1_d_0_14" x="18" y="-1.00037" width="14" height="30" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.459669 0 0 0 0 0.0464742 0 0 0 0 1 0 0 0 0.18 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_14"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_14" result="shape"/>
+</filter>
+<filter id="filter2_d_0_14" x="-1" y="20" width="30" height="14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.459669 0 0 0 0 0.0464742 0 0 0 0 1 0 0 0 0.18 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_14"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_14" result="shape"/>
+</filter>
+<filter id="filter3_d_0_14" x="-1" y="-6" width="30" height="14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.459669 0 0 0 0 0.0464742 0 0 0 0 1 0 0 0 0.18 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_14"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_14" result="shape"/>
+</filter>
+<clipPath id="clip0_0_14">
+<rect width="28" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

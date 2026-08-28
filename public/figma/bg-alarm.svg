@@ -1,0 +1,43 @@
+<svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="orbA">
+      <circle cx="140" cy="140" r="140"/>
+    </clipPath>
+    <radialGradient id="fillA" cx="140" cy="140" r="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0.57212" stop-color="#FE7700"/>
+      <stop offset="0.78365" stop-color="#FE4C00"/>
+      <stop offset="0.79718" stop-color="#FE570F"/>
+      <stop offset="0.8107" stop-color="#FE631E"/>
+      <stop offset="0.83774" stop-color="#FE793C"/>
+      <stop offset="0.86478" stop-color="#FE8F5A"/>
+      <stop offset="0.89183" stop-color="#FFA578"/>
+      <stop offset="0.94591" stop-color="#FFD2B4"/>
+      <stop offset="1" stop-color="#FFFFF0"/>
+    </radialGradient>
+    <linearGradient id="blobA" x1="139" y1="33" x2="139" y2="203" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DB0000"/>
+      <stop offset="1" stop-color="#FF00B3"/>
+    </linearGradient>
+    <linearGradient id="rimA" x1="140" y1="0" x2="140" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFF0"/>
+      <stop offset="0.35" stop-color="#FFD2B4"/>
+      <stop offset="1" stop-color="#FE7700" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blobBlurA" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18.4"/>
+    </filter>
+    <filter id="softA" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#orbA)">
+    <rect width="280" height="280" fill="url(#fillA)"/>
+    <ellipse cx="139" cy="118" rx="76" ry="85" fill="url(#blobA)" filter="url(#blobBlurA)"/>
+    <path
+      fill-rule="evenodd"
+      fill="url(#rimA)"
+      filter="url(#softA)"
+      d="M0 140a140 140 0 1 1 280 0a140 140 0 1 1-280 0ZM18 158a122 122 0 1 0 244 0a122 122 0 1 0-244 0Z"
+    />
+  </g>
+</svg>

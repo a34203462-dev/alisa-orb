@@ -1,0 +1,40 @@
+<svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="orbW">
+      <circle cx="140" cy="140" r="140"/>
+    </clipPath>
+    <radialGradient id="fillW" gradientUnits="userSpaceOnUse" cx="49.5" cy="38" r="196">
+      <stop offset="0" stop-color="#23ABFF"/>
+      <stop offset="1" stop-color="#2270F6"/>
+    </radialGradient>
+    <linearGradient id="rimW" x1="144" y1="6" x2="144" y2="83" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B8E0FF"/>
+      <stop offset="0.35" stop-color="#004DFF"/>
+      <stop offset="1" stop-color="#1768FF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="spark" cx="220" cy="168" r="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2277F7"/>
+      <stop offset="1" stop-color="#0654FF"/>
+    </radialGradient>
+    <filter id="softW" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+    <filter id="sparkBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6.4"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#orbW)">
+    <rect width="280" height="280" fill="url(#fillW)"/>
+    <path
+      fill-rule="evenodd"
+      fill="url(#rimW)"
+      filter="url(#softW)"
+      d="M0 140a140 140 0 1 1 280 0a140 140 0 1 1-280 0ZM24 168a118 118 0 1 0 232 0a118 118 0 1 0-232 0Z"
+    />
+    <path
+      filter="url(#sparkBlur)"
+      fill="url(#spark)"
+      d="M280 122L301 168L341 135L339 186L389 173L365 218L416 228L375 258L416 289L365 299L389 344L339 331L341 381L301 349L280 395L259 349L219 381L221 331L171 344L195 299L144 289L185 258L144 228L195 218L171 173L221 186L219 135L259 168L280 122Z"
+    />
+  </g>
+</svg>

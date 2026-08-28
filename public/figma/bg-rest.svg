@@ -1,0 +1,41 @@
+<svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="orb">
+      <circle cx="140" cy="140" r="140"/>
+    </clipPath>
+    <linearGradient id="rim" x1="140" y1="2" x2="140" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C926FF"/>
+      <stop offset="0.42" stop-color="#7A18FF"/>
+      <stop offset="1" stop-color="#460EFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rimLine" x1="140" y1="0" x2="140" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E08CFF"/>
+      <stop offset="1" stop-color="#C926FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-15%" y="-40%" width="130%" height="180%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+    <filter id="side" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur stdDeviation="35.75"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#orb)">
+    <rect width="280" height="280" fill="#0B0415"/>
+    <!-- серп по верхней дуге: внешний круг минус смещённый внутренний -->
+    <path
+      fill-rule="evenodd"
+      fill="url(#rim)"
+      filter="url(#soft)"
+      d="M0 140a140 140 0 1 1 280 0a140 140 0 1 1-280 0ZM18 172a122 122 0 1 0 244 0a122 122 0 1 0-244 0Z"
+    />
+    <path
+      fill="none"
+      stroke="url(#rimLine)"
+      stroke-width="10"
+      stroke-linecap="round"
+      d="M46 78c28-48 160-48 188 0"
+      opacity="0.85"
+    />
+    <circle cx="7.5" cy="100.5" r="22.5" fill="#C926FF" opacity="0.5" filter="url(#side)"/>
+  </g>
+</svg>

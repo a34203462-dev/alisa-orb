@@ -1,0 +1,47 @@
+<svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="orbT">
+      <circle cx="140" cy="140" r="140"/>
+    </clipPath>
+    <radialGradient id="fillT" cx="140" cy="140" r="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0.55" stop-color="#6405E1"/>
+      <stop offset="0.72" stop-color="#6D18E8"/>
+      <stop offset="0.84" stop-color="#8A42F8"/>
+      <stop offset="1" stop-color="#C98CFF"/>
+    </radialGradient>
+    <linearGradient id="rimT" x1="140" y1="0" x2="140" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFC8FF"/>
+      <stop offset="0.28" stop-color="#FF6BFF"/>
+      <stop offset="1" stop-color="#6405E1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="specT" x1="262" y1="74" x2="254" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE0F4"/>
+      <stop offset="0.2" stop-color="#FF7AD9"/>
+      <stop offset="1" stop-color="#8853FF" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="softT" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+    <filter id="sideT" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur stdDeviation="35.75"/>
+    </filter>
+    <filter id="specBlurT" x="-40%" y="-20%" width="180%" height="140%">
+      <feGaussianBlur stdDeviation="14.3"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#orbT)">
+    <rect width="280" height="280" fill="url(#fillT)"/>
+    <path
+      fill-rule="evenodd"
+      fill="url(#rimT)"
+      filter="url(#softT)"
+      d="M0 140a140 140 0 1 1 280 0a140 140 0 1 1-280 0ZM18 162a122 122 0 1 0 244 0a122 122 0 1 0-244 0Z"
+    />
+    <circle cx="6.5" cy="95.5" r="28" fill="#FFB0FF" filter="url(#sideT)"/>
+    <path
+      filter="url(#specBlurT)"
+      fill="url(#specT)"
+      d="M255.432 144.467C253.468 179.482 237.398 209.058 246.772 209.584C256.146 210.11 268.944 180.35 270.907 145.335C272.871 110.32 260.794 73.656 251.42 73.13C242.046 72.605 257.395 109.452 255.432 144.467Z"
+    />
+  </g>
+</svg>
