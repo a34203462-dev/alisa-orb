@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Screen, { RevealText } from './Ball.jsx'
+import { asset } from './asset.js'
 import './site.css'
 
 const SCENES = [
@@ -10,12 +11,12 @@ const SCENES = [
 ]
 
 const SHELLS = [
-  { id: 'black', label: 'Чёрный', color: '#0B0415', photo: '/figma/ball.png' },
+  { id: 'black', label: 'Чёрный', color: '#0B0415', photo: asset('figma/ball.png') },
   {
     id: 'pink',
     label: 'Розовый',
     color: '#FF5BA8',
-    photo: '/figma/ball-pink.png',
+    photo: asset('figma/ball-pink.png'),
     photoW: '228.91%',
     photoH: '127.96%',
     photoL: '-63.78%',
@@ -25,7 +26,7 @@ const SHELLS = [
     id: 'white',
     label: 'Белый',
     color: '#FFFFFF',
-    photo: '/figma/ball-white.png',
+    photo: asset('figma/ball-white.png'),
     photoW: '227.56%',
     photoH: '127.2%',
     photoL: '-63.26%',
@@ -321,7 +322,7 @@ export default function App() {
       <header className="topbar">
         <a className="brand" href="#device">
           <span className="brand-icon">
-            <img src="/figma/alice.svg" alt="" width={58} height={58} />
+            <img src={asset('figma/alice.svg')} alt="" width={58} height={58} />
           </span>
           Алиса ORB
         </a>
@@ -341,7 +342,7 @@ export default function App() {
             rel="noreferrer"
             aria-label="Открыть в Figma"
           >
-            <img src="/figma/figma-btn.png" alt="" width={60} height={60} />
+            <img src={asset('figma/figma-btn.png')} alt="" width={60} height={60} />
           </a>
         </div>
       </header>
@@ -445,7 +446,7 @@ export default function App() {
         <div className="scenes is-focused" role="tablist" aria-label="Стоп">
           <button type="button" className="scene is-on" onClick={fadeSleep}>
             <span className="scene-icon">
-              <img src="/figma/mic.svg" alt="" width={24} height={24} />
+              <img src={asset('figma/mic.svg')} alt="" width={24} height={24} />
             </span>
             Алиса, стоп
           </button>
@@ -454,13 +455,13 @@ export default function App() {
         <div className="scenes is-focused" role="tablist" aria-label="Будильник">
           <button type="button" className="scene is-on" onClick={fadeSleep}>
             <span className="scene-icon">
-              <img src="/figma/mic.svg" alt="" width={24} height={24} />
+              <img src={asset('figma/mic.svg')} alt="" width={24} height={24} />
             </span>
             Алиса, стоп
           </button>
           <button type="button" className="scene" onClick={startSnooze}>
             <span className="scene-icon">
-              <img src="/figma/mic.svg" alt="" width={24} height={24} />
+              <img src={asset('figma/mic.svg')} alt="" width={24} height={24} />
             </span>
             Алиса, еще 10 минут
           </button>
@@ -487,7 +488,7 @@ export default function App() {
               onClick={() => onSceneClick(item.id)}
             >
               <span className="scene-icon">
-                <img src="/figma/mic.svg" alt="" width={24} height={24} />
+                <img src={asset('figma/mic.svg')} alt="" width={24} height={24} />
               </span>
               {reveal ? (
                 <RevealText text={label} replay={textTick} />

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { asset } from './asset.js'
 import './App.css'
 
 const FRAME = 280
@@ -39,32 +40,32 @@ const PLACES = [
   {
     title: 'Пушкинский музей',
     addr: 'улица Волхонка, дом 12',
-    main: '/figma/place-museum.png',
-    side: '/figma/place-statue.png',
+    main: asset('figma/place-museum.png'),
+    side: asset('figma/place-statue.png'),
   },
   {
     title: 'Третьяковка',
     addr: 'Лаврушинский пер., 10',
-    main: '/figma/place-tretyakov.jpg',
-    side: '/figma/place-tretyakov-side.jpg',
+    main: asset('figma/place-tretyakov.jpg'),
+    side: asset('figma/place-tretyakov-side.jpg'),
   },
   {
     title: 'Большой\nтеатр',
     addr: 'Театральная площадь, 1',
-    main: '/figma/place-bolshoi.jpg',
-    side: '/figma/place-bolshoi-side.jpg',
+    main: asset('figma/place-bolshoi.jpg'),
+    side: asset('figma/place-bolshoi-side.jpg'),
   },
   {
     title: 'ВДНХ',
     addr: 'проспект Мира, 119',
-    main: '/figma/place-vdnh.jpg',
-    side: '/figma/place-vdnh-side.jpg',
+    main: asset('figma/place-vdnh.jpg'),
+    side: asset('figma/place-vdnh-side.jpg'),
   },
   {
     title: 'Храм Василия Блаженного',
     addr: 'Красная площадь, 2',
-    main: '/figma/place-basil.jpg',
-    side: '/figma/place-basil-side.jpg',
+    main: asset('figma/place-basil.jpg'),
+    side: asset('figma/place-basil-side.jpg'),
   },
 ]
 const LOOP = [0, 1, 2].flatMap((copy) =>
@@ -208,7 +209,7 @@ function Places({ apiRef }) {
               </div>
             </div>
             <div className="place-copy">
-              <img className="place-pin" src="/figma/pin.svg" alt="" width={18} height={18} />
+              <img className="place-pin" src={asset('figma/pin.svg')} alt="" width={18} height={18} />
               <p className="place-title">{place.title}</p>
               <p className="place-addr">{place.addr}</p>
             </div>
@@ -235,7 +236,7 @@ function NowClock() {
   return (
     <div className="now-time">
       <div className="now-icon">
-        <img src="/figma/clock.svg" alt="" />
+        <img src={asset('figma/clock.svg')} alt="" />
       </div>
       <p className="rice-clock">
         <RevealText text={now} replay={now} />
@@ -455,12 +456,12 @@ export default function Screen({
           className={`orb-bg ${currentBg === name ? 'is-on' : ''}`}
           src={
             name === 'places'
-              ? '/figma/bg-places.svg'
+              ? asset('figma/bg-places.svg')
               : name === 'timerDone'
-                ? '/figma/bg-timerDone.svg?v=2'
+                ? asset('figma/bg-timerDone.svg?v=2')
                 : name === 'alarm'
-                  ? '/figma/bg-alarm.svg'
-                  : `/figma/bg-${name}.png`
+                  ? asset('figma/bg-alarm.svg')
+                  : asset(`figma/bg-${name}.png`)
           }
           alt=""
         />
@@ -470,10 +471,10 @@ export default function Screen({
         <div
           className={`eyes ${phase === 'active' || phase === 'alarmActive' || phase === 'alarmWake' || phase === 'alarmRing' ? 'is-open' : 'is-closed'}`}
         >
-          <img className="eyes-closed" src="/figma/eyes-closed.svg" alt="" />
+          <img className="eyes-closed" src={asset('figma/eyes-closed.svg')} alt="" />
           <div className="eyes-open">
-            <img src="/figma/eye-l.svg" alt="" />
-            <img src="/figma/eye-r.svg" alt="" />
+            <img src={asset('figma/eye-l.svg')} alt="" />
+            <img src={asset('figma/eye-r.svg')} alt="" />
           </div>
         </div>
       ) : null}
@@ -503,7 +504,7 @@ export default function Screen({
 
       {phase === 'weather' ? (
         <div className="weather rise">
-          <img className="sun" src="/figma/sun.svg" alt="" />
+          <img className="sun" src={asset('figma/sun.svg')} alt="" />
           <p className="temp">10°</p>
           <p className="cond">Ясно</p>
         </div>
