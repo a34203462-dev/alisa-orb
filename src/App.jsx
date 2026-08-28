@@ -308,6 +308,13 @@ export default function App() {
 
   return (
     <div className="page">
+      <div className="mobile-stub">
+        <span className="mobile-stub-icon">
+          <img src={asset('figma/alice.svg')} alt="" width={120} height={120} />
+        </span>
+        <p className="mobile-stub-title">Откройте на компьютере</p>
+        <p className="mobile-stub-text">Этот прототип Алисы ORB рассчитан на большой экран</p>
+      </div>
       <header className="topbar">
         <a className="brand" href="#device">
           <span className="brand-icon">

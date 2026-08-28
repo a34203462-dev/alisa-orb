@@ -402,63 +402,59 @@
   box-shadow: 0 0 11px rgba(255, 255, 255, 0.87);
 }
 
+.mobile-stub {
+  display: none;
+}
+
+.mobile-stub-icon {
+  width: 120px;
+  height: 120px;
+  overflow: clip;
+  border-radius: 50%;
+}
+
+.mobile-stub-icon img {
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+
+.mobile-stub-title,
+.mobile-stub-text {
+  margin: 0;
+  max-width: 280px;
+}
+
+.mobile-stub-title {
+  font-family: "YS Display", Unbounded, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.mobile-stub-text {
+  font-size: 18px;
+  line-height: 1.25;
+  color: #b4b4be;
+}
+
 @media (max-width: 900px) {
-  .topbar {
-    padding: 32px 16px;
-    gap: 12px;
-  }
-
-  .brand {
-    height: 64px;
-    gap: 12px;
-    padding: 8px 18px 8px 8px;
-    font-size: 18px;
-  }
-
-  .brand-icon,
-  .brand-icon img {
-    width: 44px;
-    height: 44px;
-  }
-
-  .present {
-    height: 48px;
-    padding: 0 16px;
-    font-size: 14px;
-  }
-
-  .figma-link,
-  .figma-link img {
-    width: 48px;
-    height: 48px;
-  }
-
-  .swatches {
-    left: 32px;
+  .mobile-stub {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 50;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px 24px calc(32px + env(safe-area-inset-bottom));
+    background: #e8e8ee;
+    text-align: center;
   }
 
-  .device {
-    width: min(calc(479 / 1280 * 100vw), calc(478 / 832 * 100dvh));
-  }
-
-  .hint {
-    margin-top: calc(46px * var(--ui));
-    white-space: normal;
-    max-width: min(calc(479 / 1280 * 100vw), calc(478 / 832 * 100dvh));
-  }
-
-  .stage {
-    padding: 8px 16px 130px;
-  }
-
-  .scenes {
-    padding: 0 16px calc(32px + env(safe-area-inset-bottom));
-  }
-
-  .scene {
-    height: auto;
-    font-size: calc(18px * var(--ui));
-    padding: calc(24px * var(--ui)) calc(28px * var(--ui));
+  .page > :not(.mobile-stub) {
+    display: none !important;
   }
 }
