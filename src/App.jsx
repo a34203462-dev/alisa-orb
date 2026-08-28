@@ -12,26 +12,8 @@ const SCENES = [
 
 const SHELLS = [
   { id: 'black', label: 'Чёрный', color: '#0B0415', photo: asset('figma/ball.png') },
-  {
-    id: 'pink',
-    label: 'Розовый',
-    color: '#FF5BA8',
-    photo: asset('figma/ball-pink.png'),
-    photoW: '228.91%',
-    photoH: '127.96%',
-    photoL: '-63.78%',
-    photoT: '-13.6%',
-  },
-  {
-    id: 'white',
-    label: 'Белый',
-    color: '#FFFFFF',
-    photo: asset('figma/ball-white.png'),
-    photoW: '227.56%',
-    photoH: '127.2%',
-    photoL: '-63.26%',
-    photoT: '-13.31%',
-  },
+  { id: 'pink', label: 'Розовый', color: '#FF5BA8', photo: asset('figma/ball-pink.jpg') },
+  { id: 'white', label: 'Белый', color: '#FFFFFF', photo: asset('figma/ball-white.jpg') },
 ]
 
 const HINT_DEFAULT = 'Потрясите Алису мышкой'
@@ -56,6 +38,13 @@ export default function App() {
   phaseRef.current = phase
   activeIdRef.current = activeId
   const currentShell = SHELLS.find((item) => item.id === shell) ?? SHELLS[0]
+
+  useEffect(() => {
+    SHELLS.forEach((item) => {
+      const img = new Image()
+      img.src = item.photo
+    })
+  }, [])
 
   const clearTimers = useCallback(() => {
     timers.current.forEach((id) => window.clearTimeout(id))
@@ -390,16 +379,6 @@ export default function App() {
                 ref={stageRef}
                 data-shell={shell}
                 className={`device ${phase === 'riceDone' || phase === 'alarmRing' ? 'is-alarm' : ''}`}
-                style={
-                  currentShell.photoW
-                    ? {
-                        '--photo-w': currentShell.photoW,
-                        '--photo-h': currentShell.photoH,
-                        '--photo-l': currentShell.photoL,
-                        '--photo-t': currentShell.photoT,
-                      }
-                    : undefined
-                }
                 role="button"
                 tabIndex={0}
                 aria-label="Шар Алисы"
@@ -409,6 +388,7 @@ export default function App() {
                     className="device-photo"
                     src={currentShell.photo}
                     alt=""
+                    decoding="async"
                   />
                   <div className="screen">
                     <Screen

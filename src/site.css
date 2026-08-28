@@ -294,18 +294,6 @@
   pointer-events: none;
 }
 
-.device[data-shell='pink'] .device-photo,
-.device[data-shell='white'] .device-photo {
-  inset: auto;
-  width: var(--photo-w);
-  height: var(--photo-h);
-  left: var(--photo-l);
-  top: var(--photo-t);
-  max-width: none;
-  object-fit: fill;
-  transform: none;
-}
-
 .screen {
   position: absolute;
   left: 25.16%;
