@@ -40,8 +40,8 @@ const PLACES = [
   {
     title: 'Пушкинский музей',
     addr: 'улица Волхонка, дом 12',
-    main: asset('figma/place-museum.png'),
-    side: asset('figma/place-statue.png'),
+    main: asset('figma/place-museum.jpg'),
+    side: asset('figma/place-statue.jpg'),
   },
   {
     title: 'Третьяковка',
@@ -72,6 +72,15 @@ const LOOP = [0, 1, 2].flatMap((copy) =>
   PLACES.map((place, i) => ({ ...place, key: `${copy}-${i}`, copy, idx: i })),
 )
 
+export function preloadPlaces() {
+  PLACES.forEach((place) => {
+    const main = new Image()
+    const side = new Image()
+    main.src = place.main
+    side.src = place.side
+  })
+}
+
 function bgFor(phase) {
   if (phase === 'listen' || phase === 'listen2') return 'listen'
   if (phase === 'think' || phase === 'think2') return 'think'
@@ -100,6 +109,15 @@ export function RevealText({ text, className, replay }) {
 function Places({ apiRef }) {
   const trackRef = useRef(null)
   const xRef = useRef(0)
+
+  useEffect(() => {
+    PLACES.forEach((place) => {
+      const main = new Image()
+      const side = new Image()
+      main.src = place.main
+      side.src = place.side
+    })
+  }, [])
 
   useEffect(() => {
     const track = trackRef.current
@@ -202,10 +220,10 @@ function Places({ apiRef }) {
           <article key={place.key} className="place-card">
             <div className="place-photos">
               <div className="place-photo place-photo-side">
-                <img src={place.side} alt="" />
+                <img src={place.side} alt="" decoding="async" />
               </div>
               <div className="place-photo place-photo-main">
-                <img src={place.main} alt="" />
+                <img src={place.main} alt="" decoding="async" />
               </div>
             </div>
             <div className="place-copy">

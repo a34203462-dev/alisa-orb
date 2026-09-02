@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import Screen, { RevealText } from './Ball.jsx'
+import Screen, { RevealText, preloadPlaces } from './Ball.jsx'
 import { asset } from './asset.js'
 import './site.css'
 
@@ -155,6 +155,7 @@ export default function App() {
   }
 
   const startGo = () => {
+    preloadPlaces()
     clearTimers()
     setActiveId('go')
     setCta('Куда сходить?')
